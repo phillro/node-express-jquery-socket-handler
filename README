@@ -1,4 +1,4 @@
-Socket Handler is a structure for cleanly handling user sessions and multiple namespaces with express and socket.io.
+Socket Handler is a structure for cleanly handling user sessions and multiple namespaces with express,socket.io jquery.
 
 It consists of a number of pieces adapted from other examples seen online, including: http://spiritconsulting.com.ar/fedex/2010/11/events-with-jquery-nodejs-and-socket-io/
 If I missed anone please email for inclusion.
