@@ -1,0 +1,10 @@
+Socket Handler is a structure for cleanly handling user sessions and multiple namespaces with express and socket.io.
+
+It consists of a number of pieces adapted from other examples seen online, including: http://spiritconsulting.com.ar/fedex/2010/11/events-with-jquery-nodejs-and-socket-io/
+If I missed anone please email for inclusion.
+
+lib/socketHandler.js sets the session on the socket on client connection
+lib/exampleSocket is an inidivual socket name space
+public/js/jquery-socket-event-handler.js A jquery extension that handles socket.io connection and message dispatching
+pub/index.html Demonstrates triggering and responding to events
+app.js How to include it all in your express app

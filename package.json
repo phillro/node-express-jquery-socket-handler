@@ -1,0 +1,5 @@
+{
+    "name":"socket-handler", "version":"0.0.1", "private":false, "dependencies":{
+    "socket.io":">0.0.1",
+}
+}

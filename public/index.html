@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Socket Example</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" href="/css/images/favicon.ico">
+    <script type="text/javascript" src="/js/jquery-1.7.1.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/jquery-socket-event-handler.js" type="text/javascript" charset="utf-8"></script>
+
+
+    <script>window["_GOOG_TRANS_EXT_VER"] = "1";</script>
+</head>
+<body>
+<div id="test_data"></div>
+<button id="start_btn">Start</button>
+<script>
+    $(document).ready(function () {
+        $(document).socketEventHandler({host:'http://hostname:80/'});
+
+        $(document).bind('example_ns', function (event, data) {
+            $('#test_data').html(data.random)
+        })
+
+        $('#start_btn').click(function (ev) {
+            $(document).socketEventHandler('_trigger', {ns:'example_ns', event:'random', data:{params:'any params'}});
+        })
+
+    })
+</script>
+</body>
+</html>
